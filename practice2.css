@@ -4,11 +4,19 @@
     margin :-1px ;
     padding : 0  ;
     -webkit-box-sizing  : border-box ;
+    -moz-box-sizing  : border-box ;
+    -ms-box-sizing  : border-box ;
+    box-sizing  : border-box ;
+    
 }
 body {
     height :4000px   ;
-    perspective: 600px
+    -webkit-perspective: 600px ;
+    -moz-perspective: 600px ;
+    -ms-perspective: 600px ;
+    perspective: 600px ;
 }
+
 html {
     overflow-x: hidden ;
 }
@@ -150,9 +158,6 @@ html {
     display: block ; 
 }
 
-.slider-option {
-    
-}
 .slider-option:nth-child(1) h1 {
     text-align : center ; 
     font-size : 80pt  ;
@@ -265,8 +270,10 @@ html {
     top : -158px ;
     right : 0  ;
     clip-path  :ellipse(87% 50% at 50% 50%) ;
-
-
+    -webkit-clip-path  :ellipse(87% 50% at 50% 50%) ;
+    -moz-clip-path  :ellipse(87% 50% at 50% 50%) ;
+    -ms-clip-path  :ellipse(87% 50% at 50% 50%) ;
+    
 }
 #circular h1 {
     margin : 170px auto 0  ;
@@ -297,6 +304,9 @@ text-align  : center  ;
                    background: #5a5a5a;
                    margin: 150px auto;
                    transform: rotatex(89deg) rotateZ(45deg);
+                   -webkit-transform: rotatex(89deg) rotateZ(45deg);
+                   -moz-transform: rotatex(89deg) rotateZ(45deg);
+                   -ms-transform: rotatex(89deg) rotateZ(45deg);
                    position: absolute;
                    top: -286px;
                    left: -100px;
@@ -324,8 +334,10 @@ text-align  : center  ;
                     width: 100% ;
                     height : 100% ;
                     background:#5a5a5a ;
-                    clip-path:polygon(10% 25% , 50% 0% , 90% 25% , 90% 75% , 50% 100% , 10% 75%)
-                    
+                    clip-path:polygon(10% 25% , 50% 0% , 90% 25% , 90% 75% , 50% 100% , 10% 75%);
+                    -webkit-clip-path:polygon(10% 25% , 50% 0% , 90% 25% , 90% 75% , 50% 100% , 10% 75%);
+                    -moz-clip-path:polygon(10% 25% , 50% 0% , 90% 25% , 90% 75% , 50% 100% , 10% 75%);
+                    -ms-clip-path:polygon(10% 25% , 50% 0% , 90% 25% , 90% 75% , 50% 100% , 10% 75%); 
                   }
                   
                   #cap {
@@ -397,9 +409,21 @@ text-align  : center  ;
    width: 100% ;
    display: flex; 
    justify-content: center ;
+   -webkit-justify-content: center ;
+    -moz-justify-content: center ;
+    -ms-justify-content: center ;  
    align-items: center    ;
+   -webkit-align-items: center    ;
+    -moz-align-items: center    ;
+    -ms-align-items: center    ; 
    align-content:  space-around  ;
+   -webkit-align-content:  space-around  ;
+    -moz-align-content:  space-around  ;
+    -ms-align-content:  space-around  ; 
        flex-wrap: wrap ;
+       -webkit-flex-wrap: wrap ;
+    -moz-flex-wrap: wrap ;
+    -ms-flex-wrap: wrap ; 
        padding  : 10px ;
        position: relative  ;
        
@@ -418,6 +442,9 @@ text-align  : center  ;
 }
 .logo2:hover {
     box-shadow:  0 0 0 8px #5a5a5a ; 
+    -webkit-box-shadow:  0 0 0 8px #5a5a5a ; 
+    -moz-box-shadow:  0 0 0 8px #5a5a5a ; 
+    -ms-box-shadow:  0 0 0 8px #5a5a5a ; 
 }
 .logo2 {
     width : 120px ;
@@ -425,6 +452,9 @@ text-align  : center  ;
     border-radius : 50%  ;
     background : #fff ;
     margin  :auto  ;
+    -webkit-transition  : all 0.2s  linear ;
+    -moz-transition  : all 0.2s  linear ;
+    -ms-transition  : all 0.2s  linear ;
     transition  : all 0.2s  linear ;
     padding : 20px 20px  ;
 
@@ -438,14 +468,23 @@ text-align  : center  ;
     display : inline-block  ;
     margin  :  20px   ;
     flex-shrink: 0  ;
-           overflow: hidden ;
-           transition: all  .5s ease-in-out 
+    -webkit-flex-shrink: 0  ;
+    -moz-flex-shrink: 0  ;
+    -ms-flex-shrink: 0  ;
+    overflow: hidden ;
+    -webkit-transition: all  .5s ease-in-out ;
+    -moz-transition: all  .5s ease-in-out ;
+    -ms-transition: all  .5s ease-in-out ;
+    transition: all  .5s ease-in-out ;
 
 }
  .project img {
     width : 100% ;
     height : 100% ;
-             transition: all  .2s ease-in-out  ;
+    -webkit-transition: all  .2s ease-in-out  ;
+    -moz-transition: all  .2s ease-in-out  ;
+    -ms-transition: all  .2s ease-in-out  ;
+    transition: all  .2s ease-in-out  ;
 
  }
 #pro-right {
@@ -458,13 +497,18 @@ text-align  : center  ;
      top  : 41%   ;
     right : 9%    ; 
         border-radius: 14px ;
-        transition: all .2s linear ; 
+    transition: all .2s linear ; 
+    -webkit-transition: all .2s linear ; 
+    -moz-transition: all .2s linear ; 
+    -ms-transition: all .2s linear ; 
 
 }
 
 #pro-right:hover , #pro-left:hover {
     box-shadow:  0px 0px 10px #000  ;
-    
+    -webkit-box-shadow:  0px 0px 10px #000  ;
+    -moz-box-shadow:  0px 0px 10px #000  ;
+    -ms-box-shadow:  0px 0px 10px #000  ;
 
 }
 #pro-right i {
@@ -473,6 +517,10 @@ text-align  : center  ;
     border-top:  5px #b8a7a7   solid  ; 
         border-right:  5px #b8a7a7   solid  ;
         display: block  ;
+        
+    -webkit-transform: rotateZ(44deg)  ;
+    -moz-transform: rotateZ(44deg)  ;
+    -ms-transform: rotateZ(44deg)  ;
         transform: rotateZ(44deg)  ;
         margin-top : 7px ;
         margin-left : 10px ; 
@@ -489,7 +537,10 @@ text-align  : center  ;
     left : 9%   ;
     border-radius: 14px ;
             transition: all .2s linear ; 
-
+            -webkit-transition: all .2s linear ; 
+            -moz-transition: all .2s linear ; 
+            -ms-transition: all .2s linear ; 
+            
     
 }
 #pro-left i {
@@ -498,6 +549,9 @@ text-align  : center  ;
     border-bottom:  5px #b8a7a7   solid  ; 
         border-left:  5px #b8a7a7   solid  ;
         display: block  ;
+    -webkit-transform: rotateZ(44deg)  ;
+    -moz-transform: rotateZ(44deg)  ;
+    -ms-transform: rotateZ(44deg)  ;
         transform: rotateZ(44deg)  ;
         margin-top : 7px ;
         margin-left : 21px ;
@@ -567,21 +621,34 @@ text-align  : center  ;
 
     margin :10px  auto 30px  ;
     display: flex ;
+    -webkit-flex-direction: row  ;
+    -ms-flex-direction: row  ;
+    -moz-flex-direction: row  ;
     flex-direction: row  ;
+    -webkit-justify-content: center ;
+    -moz-justify-content: center ;
+    -ms-justify-content: center ;
     justify-content: center ;
-    align-items: center
+    -webkit-align-items: center ;
+    -moz-align-items: center ;
+    -ms-align-items: center ;
+    align-items: center ;
     
 }
-#testimonial * {
-    /*margin  : 5px ; */
-}
+
 .side-left {
     width : 40px  ;
     height :40px ;
  
      border-bottom: 5px  #fff solid  ;
     border-right : 5px  #fff solid  ;
+    -webkit-transform : rotateZ(135deg) ;
+    -moz-transform : rotateZ(135deg) ;
+    -ms-transform : rotateZ(135deg) ;
     transform : rotateZ(135deg) ;
+    -webkit-transition  : all .2s linear   ;
+    -moz-transition  : all .2s linear   ;
+    -ms-transition  : all .2s linear   ;
     transition  : all .2s linear   ;
 
     
@@ -591,6 +658,9 @@ text-align  : center  ;
 .side-left:hover {
     
      transform : translateX(-30px ) scale( 1.5 , 1.5   ) rotateZ(135deg) ; 
+     -webkit-transform : translateX(-30px ) scale( 1.5 , 1.5   ) rotateZ(135deg) ; 
+    -moz-transform : translateX(-30px ) scale( 1.5 , 1.5   ) rotateZ(135deg) ; 
+    -ms-transform : translateX(-30px ) scale( 1.5 , 1.5   ) rotateZ(135deg) ; 
     
 }
 
@@ -602,6 +672,9 @@ text-align  : center  ;
     border-radius: 50% ;
     overflow: hidden ;
     transition : all 0.2s linear  ;
+    -webkit-transition : all 0.2s linear  ;
+    -moz-transition : all 0.2s linear  ;
+    -ms-transition : all 0.2s linear  ;
     
   
    
@@ -621,13 +694,22 @@ text-align  : center  ;
     height : 40px ;
 
      border-top: 5px  #fff solid  ;
-    border-left : 5px  #fff solid  ; transform : rotateZ(135deg) ;
+    border-left : 5px  #fff solid  ;
+     transform : rotateZ(135deg) ;
+    -webkit-transform : rotateZ(135deg) ;
+    -moz-transform : rotateZ(135deg) ;
+    -ms-transform : rotateZ(135deg) ;
     transition  : all .2s linear   ; 
-    
+    -webkit-transition  : all .2s linear   ; 
+    -moz-transition  : all .2s linear   ; 
+    -ms-transition  : all .2s linear   ; 
     
 }
  .side-right:hover {
      transform : translateX(30px ) scale( 1.5 , 1.5   ) rotateZ(135deg) ; 
+     -webkit-transform : translateX(30px ) scale( 1.5 , 1.5   ) rotateZ(135deg) ; 
+    -moz-transform : translateX(30px ) scale( 1.5 , 1.5   ) rotateZ(135deg) ; 
+    -ms-transform : translateX(30px ) scale( 1.5 , 1.5   ) rotateZ(135deg) ; 
      
      
      
@@ -684,9 +766,15 @@ width : 76%  ;
      display: inline-block ;
      border-radius: 50% ;
      background : #f1f4f9 ;
+     -webkit-transition:  all 1s ease-in-out ;
+    -moz-transition:  all 1s ease-in-out ;
+    -ms-transition:  all 1s ease-in-out ;
      transition:  all 1s ease-in-out ;
      position: relative ;
      overflow : hidden ; 
+     -webkit-transform-style: preserve-3d ; 
+    -moz-transform-style: preserve-3d ; 
+    -ms-transform-style: preserve-3d ; 
     transform-style: preserve-3d ; 
 }
 
@@ -726,7 +814,9 @@ width : 76%  ;
    
     z-index: 1;
     background-color: blue ; 
-    
+    -webkit-backface-visibility: hidden ; 
+    -moz-backface-visibility: hidden ; 
+    -ms-backface-visibility: hidden ; 
     backface-visibility: hidden ; 
 }
  .service .icon1 {
@@ -998,6 +1088,9 @@ footer {
 
 @media (max-width : 767px ) {
     #circular {
+        -webkit-clip-path  :none !important ;
+    -moz-clip-path  :none !important ;
+    -ms-clip-path  :none !important ;
          clip-path  :none !important ;
           position :static ; 
     }
@@ -1016,12 +1109,18 @@ footer {
 }
 @media (max-width  : 991px ) {
       #circular {
+        -webkit-clip-path  :ellipse(105% 45% at 50% 50%);
+        -moz-clip-path  :ellipse(105% 45% at 50% 50%);
+        -ms-clip-path  :ellipse(105% 45% at 50% 50%);
          clip-path  :ellipse(105% 45% at 50% 50%)
     }
 }
 
 @media (max-width  : 1200px ) {
      #circular {
+        -webkit-clip-path  :ellipse(102% 46% at 50% 50%) ;
+        -moz-clip-path  :ellipse(102% 46% at 50% 50%) ;
+        -ms-clip-path  :ellipse(102% 46% at 50% 50%) ;
          clip-path  :ellipse(102% 46% at 50% 50%) ;
          top: -177px;
     }
@@ -1136,16 +1235,25 @@ width : 100% ;}
 /*keyframes*/
 @keyframes cardflip {
     0% {
+        -webkit-transform: rotateY( 0deg ) ;
+    -moz-transform: rotateY( 0deg ) ;
+    -ms-transform: rotateY( 0deg ) ;
         transform: rotateY( 0deg ) ;
       
         
     }
     50% {
+        -webkit-transform: rotateY(90deg) ;
+    -moz-transform: rotateY(90deg) ;
+    -ms-transform: rotateY(90deg) ;
          transform: rotateY(90deg) ;
         
     }
     
     100% {
+        -webkit-transform: rotateY(180deg) ;
+    -moz-transform: rotateY(180deg) ;
+    -ms-transform: rotateY(180deg) ;
           transform: rotateY(180deg) ;
     
     }
