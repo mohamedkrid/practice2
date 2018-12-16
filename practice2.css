@@ -100,7 +100,10 @@ html {
     width : 20px ;
     height : 20px  ;
     display: block ;
-    transform : rotateZ(135deg)
+    -webkit-transform : rotateZ(135deg);
+    -moz-transform : rotateZ(135deg);
+    -ms-transform : rotateZ(135deg);
+    transform : rotateZ(135deg);
     
     
  }
@@ -125,6 +128,9 @@ html {
     width : 20px ;
     height : 20px  ;
     display: block ;
+    -webkit-transform : rotateZ(135deg);
+    -moz-transform : rotateZ(135deg);
+    -ms-transform : rotateZ(135deg);
     transform : rotateZ(135deg)
 }
 .slider-cont {
@@ -146,6 +152,12 @@ html {
     top  : 0  ;
     left : 0 ;
     display  : block ;
+    -webkit-transform: translateX( 100%)  ;
+    -moz-transform: translateX( 100%)  ;
+    -ms-transform: translateX( 100%)  ;
+    -webkit-transition:  all 1s linear  ;
+    -moz-transition:  all 1s linear  ;
+    -ms-transition:  all 1s linear  ;
     transform: translateX( 100%)  ;
     transition:  all 1s linear  ;
     overflow:hidden   ;
