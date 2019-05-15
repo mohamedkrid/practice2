@@ -144,8 +144,8 @@ function slider_reload () {
    slider_cont.children[0].style.transform ='translateX(0% )  ' ;
  
 } 
-// slider part end    
- 
+// slider part end   miwwxxxxq
+  
  var inter_slider = setInterval(function() {
   'use strict '  ;
    right_button.click() ;
